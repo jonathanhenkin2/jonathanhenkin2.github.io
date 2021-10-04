@@ -16,58 +16,60 @@
 
 		}
 		#messages{
-			height: 53px;
-			width: 53px;
-			color:black;
-			text-align: center;
-			border-radius: 10px;
 			background-color: rgb(254,216,167);
-			position:absolute;
-			left:663px;
-  			bottom:106px; 
+			/*left:663px;
+  			bottom:106px; */
 		}
 		#gmail{
-			height: 53px;
-			width: 53px;
-			text-align: center;
-			border-radius: 10px;
 			background-color: rgb(255,255,191);
-			position:absolute;
-			left:797px;
-  			bottom:106px; 
+			/*left:797px;
+  			bottom:106px;*/ 
 		}
 		#safari{
-			height: 53px;
-			width: 53px;
-			text-align: center;
-			border-radius: 10px;
 			background-color: rgb(209,237,242);
-			position:absolute;
-			left:730px;
-  			bottom:106px; 
+			/*left:730px;
+  			bottom:106px; */
 		}
 		#call{
+			background-color: rgb(144,238,144);
+			/*left:596px;
+  			bottom:106px; */
+		}
+
+		.button{
 			height: 53px;
 			width: 53px;
 			color:black;
 			text-align: center;
 			border-radius: 10px;
-			background-color: rgb(144,238,144);
+			position:relative;
+			display:inline-block;
+			margin:1.55%;
+
+		}
+		#container{
 			position:absolute;
-			left:596px;
-  			bottom:106px; 
+/*			background-color: red;
+*/			width:100%;
+			height:20%;
+			top:83.75%;
 		}
 	</style>
 </head>
 <body>
 
-<center><div id="iphone"></div>
-<a><div id="safari">About me</div></a>
+<center><div id="iphone">
 
-<a href=journal.html><div id="messages">Journal</div></a>
+<div id="container">	
+<a><div class="button"id="safari">Me</div></a>
 
-<a href=projects.html><div id="call">Projects</div></a>
+<a href=journal.html><div class="button" id="messages">Journal</div></a>
 
-<a><div id="gmail">Don't click.</div></a>
+<a href=projects.html><div class="button" id="call">Projects</div></a>
+
+<a><div class="button" id="gmail">X</div></a>
+
+</div> <!-- end of container -->
+</div>
 </body>
 </html>
