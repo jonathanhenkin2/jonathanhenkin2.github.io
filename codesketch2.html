@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ball</title>
+	<style>
+		#ball{
+			top: 92%;
+			left:45%;
+			width:60px;
+			height:60px;
+			border-radius: 5%;
+			background-color: teal;
+			position: absolute;
+			animation-name: move;
+			animation-duration: 16s;
+			animation-iteration-count: 1;
+		}
+
+		@keyframes move{
+			0%{
+				top: 92%;
+				left:45%;
+				border-radius: 5%;
+			}
+
+			12.5%{
+				top:50%;
+				left:0%;
+				border-radius: 20%;
+			}
+			25%{
+				top:0%;
+				left:50%;
+				border-radius: 35%
+			}
+			37.5%{
+				top:50%;
+				left:95%;
+				border-radius:50%;
+			}
+			50%{
+				left:105%;
+				display: none;
+
+
+			}
+			100%{
+				left:200%;
+			}
+
+		}
+
+	</style>
+</head>
+<body>
+<div id="ball"></div>
+</body>
+</html>
