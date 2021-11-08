@@ -79,10 +79,18 @@ function updateTime(){
 	// var time = today.getHours() + ":" + today.getMinutes();
 	var hours = today.getHours();
 	var mins = today.getMinutes();
-	if (mins < 10) {
-		var time = hours + ":0" + mins;
+	if (hours > 12) {
+		if (mins < 10) {
+			var time = hours - 12 + ":0" + mins;
+		} else {
+			var time = hours - 12 + ":" + mins;
+		}
 	} else {
-		var time = hours + ":" + mins;
+		if (mins < 10) {
+			var time = hours + ":0" + mins;
+		} else {
+			var time = hours + ":" + mins;
+		}
 	}
 	document.getElementById('clock').innerText = time;
 }
