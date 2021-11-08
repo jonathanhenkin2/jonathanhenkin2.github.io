@@ -2,30 +2,21 @@
 <html>
 <head>
 	<title></title>
-	<style type="text/css">
-		*{
-			margin: 0px;
-		}
-		#bg{
-			height:100vh;
-			width:100vh;
-		}
-	</style>
 </head>
 <body>
-	<div id="bg" onclick="makeGunna()">
+
 	
 
 <script type="text/javascript">
 
-	var bg = document.getElementById('bg');
-	
 	function makeGunna() {
 		var gunna = document.createElement("div");
-		bg.appendChild(gunna);
+		document.body.appendChild(gunna);
 		var x = Math.random()*1500
 		var y = Math.random()*1000
 		var s = Math.random()*100
+		x = event.clientX
+		y = event.clientY
 
 		gunna.style.width = s + "px";
 
@@ -37,15 +28,14 @@
 
 		gunna.style.backgroundRepeat = "no-repeat";
 
-		gunna.style.right = x + "px";
+		gunna.style.left = x - s/2 + "px";
 
-		gunna.style.top = y + "px";
+		gunna.style.top = y - s/2 + "px";
 
 		gunna.style.position = "absolute"; 
 
 	}
-
-
+	document.addEventListener("click", makeGunna)
 
 
 </script>

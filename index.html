@@ -58,13 +58,40 @@
 			height:20%;
 			top:83.75%;
 		}
+		#clock{
+			width:130px;
+			height:30px;
+			top:39px;
+			left:.0005px;
+			color:white;
+			position: absolute;
+			font-family: 'Bebas Neue', cursive;
+		}
 	</style>
 </head>
 <body>
 
 <center><div id="iphone">
+<div id="clock"></div>
+<script type="text/javascript">
+function updateTime(){
+	var today = new Date();
+	// var time = today.getHours() + ":" + today.getMinutes();
+	var hours = today.getHours();
+	var mins = today.getMinutes();
+	if (mins < 10) {
+		var time = hours + ":0" + mins;
+	} else {
+		var time = hours + ":" + mins;
+	}
+	document.getElementById('clock').innerText = time;
+}
+	setInterval(updateTime, 1);
 
+	
+</script>
 <div id="container">	
+
 <a href=aboutme.html><div class="button"id="safari">Me</div></a>
 
 <a href=journal.html><div class="button" id="messages">Journal</div></a>
