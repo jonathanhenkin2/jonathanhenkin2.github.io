@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body{
+			background-color: #0d1137;
+			color: white;
+		}
+		p{
+			font-size: 20px;
+			color: white;
+		}
+		#box{
+			height:500px;
+			width:500px;
+			border-radius: 2rem;
+			border: solid;
+			background-size: contain;
+			background-repeat: no-repeat;
+			display: block;
+			background-position:center;
+  			background-color: #e52165;
+		}
+	</style>
+	<title></title>
+</head>
+<body>
+<center>
+	<p>IS IT WORTH IT?</p>
+	<!-- <p>CLICK TO SEE A SCHOOL THAT YOU ARE NOT GETTING INTO UNLESS YOU HAVE WASTED 50,000 DOLLARS A YEAR FOR 13 YEARS AT AN ELITE NYC PRIVATE SCHOOL</p> -->
+<div id="box"></div>
+<p id = "p2"></p>
+<script type="text/javascript">
+	var schools = ["Harvard", "Princeton", "Columbia", "MIT", "Yale", "Stanford", "Dartmouth", "Brown","Penn", "Cornell",  ]
+	var pics = ["url(harvard.png)", "url(princeton.png)", "url(columbia.png)", "url(mit.png)", "url(yale.png)", "url(stanford.png)", "url(dartmouth.png)", "url(brown.png)","url(penn.png)", "url(cornell.png)",  ]
+	var click = document.getElementById("box");
+	var click2 = document.getElementById("p2");
+	click.addEventListener("click", function(){
+		var random = Math.floor(Math.random()*10);
+		box.style.backgroundImage = pics[random];
+		click2.innerText = schools[random];
+
+})
+	
+</script>
+</body>
+</html>

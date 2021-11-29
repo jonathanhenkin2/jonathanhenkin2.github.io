@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var p =prompt("How many images would you like to spawn!?")
+	function makeKile(){
+		var ik = "url(kile2.1.jpg)"
+		var ic = "url(cowlezy.jpg)"
+		var kile = document.createElement("div")
+		document.body.appendChild(kile)
+		kile.style.backgroundImage = ik;
+		kile.style.height = "100px";
+		kile.style.width = "100px";
+		kile.style.backgroundSize = "cover";
+		kile.style.display = "inline-grid";
+
+		
+		
+			
+
+
+		kile.addEventListener("click",
+			function checkPic (){
+			if (kile.style.backgroundImage == ic) {
+				kile.style.backgroundImage = ik;
+			} else if (kile.style.backgroundImage == ik)
+			kile.style.backgroundImage = ic;
+		})
+			console.log(100)
+			})
+
+		
+	}
+for (let i = 0; i < p; i++) {
+  makeKile();
+}
+</script>
+</body>
+</html>

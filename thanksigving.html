@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	
+
+<script type="text/javascript">
+
+	function makePie() {
+		var pie = document.createElement("div");
+		document.body.appendChild(pie);
+		var x = Math.random()*1500
+		var y = Math.random()*1000
+		var s = Math.floor(Math.random()*3)
+		var one = "url(pumpkin.png)"
+		var two = "url(apple.jpg)"
+		var three = "url(pecan.jpg)"
+		x = event.clientX
+		y = event.clientY
+
+		pie.style.width = "100px";
+
+		pie.style.height = "100px";
+		if (s==0) {
+			pie.style.backgroundImage = one;
+		} else if (s==1) {
+			pie.style.backgroundImage = two;
+		} else {
+			pie.style.backgroundImage = three;
+		}
+
+		pie.style.backgroundSize = "contain";
+
+		pie.style.backgroundRepeat = "no-repeat";
+
+		pie.style.left = x - 50 + "px";
+
+		pie.style.top = y - 50 + "px";
+
+		pie.style.position = "absolute"; 
+
+	}
+	document.addEventListener("click", makePie)
+
+
+</script>
+</div>
+</body>
+</html>

@@ -10,7 +10,7 @@
 			width:1000px;
 			height:200px;
 			position:absolute;
-			top:30%;
+			top:10%;
 			left:17.5%;
 			font-size: 100px;
 			font-family: 'Bebas Neue', cursive;
@@ -24,6 +24,60 @@
 			padding-top:2.5%;
 			margin:1.75%;
 		}
+		.button:hover{
+			color:rgb(92,189,234);
+		}
+		.tall{
+			right:275px;
+			top:-20px;
+			position: relative;
+			display: none;
+
+		}
+		.hot{
+			right:185px;
+			top:-20px;
+			position: relative;
+			display: none;
+
+		}
+		.fun{
+			right:90px;
+			top:-255px;
+			position: relative;
+			display: none;
+
+		}
+		.nick{
+			right:0px;
+			top:-20px;
+			position: relative;
+			display: none;
+
+		}
+		.ideal{
+			right:-90px;
+			top:-260px;
+			position: relative;
+			display: none;
+
+		}
+		.perfect{
+			right:-185.5px;
+			top:-245px;
+			font-size: 95px;
+			position: relative;
+			display: none;
+
+		}
+		.brown{
+			right:-270px;
+			top:-260px;
+			position: relative;
+			display: none;
+
+		}
+
 	</style>
 
 </head>
@@ -37,6 +91,136 @@
 <div class="button" id="e">E</div>
 <div class="button" id="r">R</div>
 
+<div class = "tall">A</div>
+<div class = "tall">L</div>
+<div class = "tall">L</div>
+
+<div class = "hot">O</div>
+<div class = "hot">T</div>
+
+<div class = "fun">F</div>
+<div class = "fun">&nbsp;</div>
+<div class = "fun">N</div>
+<div class = "fun">N</div>
+<div class = "fun">Y</div>
+
+<div class = "nick">I</div>
+<div class = "nick">C</div>
+<div class = "nick">K</div>
+
+<div class = "ideal">I</div>
+<div class = "ideal">&nbsp;</div>
+<div class = "ideal">E</div>
+<div class = "ideal">A</div>
+<div class = "ideal">L</div>
+
+
+<div class = "perfect">P</div>
+<div class = "perfect">&nbsp;</div>
+<div class = "perfect">R</div>
+<div class = "perfect">F</div>
+<div class = "perfect">E</div>
+<div class = "perfect">C</div>
+<div class = "perfect">T</div>
+
+
+<div class = "brown">B</div>
+<div class = "brown">&nbsp;</div>
+<div class = "brown">O</div>
+<div class = "brown">W</div>
+<div class = "brown">N</div>
+
+
 </div>
+
+<script type="text/javascript">
+
+	var tallLetters = Array.from(document.getElementsByClassName("tall"));
+	var t = document.getElementById("t")
+
+	t.addEventListener("mouseenter", function() {
+
+		tallLetters.forEach(
+			element => element.style.display = "block")})
+
+	t.addEventListener("mouseleave", function() {
+
+		tallLetters.forEach(
+			element => element.style.display = "none")})
+
+	var hotLetters = Array.from(document.getElementsByClassName("hot"));
+	var h = document.getElementById("h")
+
+	h.addEventListener("mouseenter", function() {
+
+		hotLetters.forEach(
+			element => element.style.display = "block")})
+
+	h.addEventListener("mouseleave", function() {
+
+		hotLetters.forEach(
+			element => element.style.display = "none")})
+
+	var funLetters = Array.from(document.getElementsByClassName("fun"));
+	var f = document.getElementById("u")
+
+	f.addEventListener("mouseenter", function() {
+
+		funLetters.forEach(
+			element => element.style.display = "block")})
+
+	f.addEventListener("mouseleave", function() {
+
+		funLetters.forEach(
+			element => element.style.display = "none")})
+	var nickLetters = Array.from(document.getElementsByClassName("nick"));
+	var n = document.getElementById("n")
+
+	n.addEventListener("mouseenter", function() {
+
+		nickLetters.forEach(
+			element => element.style.display = "block")})
+
+	n.addEventListener("mouseleave", function() {
+
+		nickLetters.forEach(
+			element => element.style.display = "none")})
+	var idealLetters = Array.from(document.getElementsByClassName("ideal"));
+	var i = document.getElementById("d")
+
+	i.addEventListener("mouseenter", function() {
+
+		idealLetters.forEach(
+			element => element.style.display = "block")})
+
+	i.addEventListener("mouseleave", function() {
+
+		idealLetters.forEach(
+			element => element.style.display = "none")})
+	var brownLetters = Array.from(document.getElementsByClassName("brown"));
+	var b = document.getElementById("r")
+
+	b.addEventListener("mouseenter", function() {
+
+		brownLetters.forEach(
+			element => element.style.display = "block")})
+
+	b.addEventListener("mouseleave", function() {
+
+		brownLetters.forEach(
+			element => element.style.display = "none")})
+	var perfLetters = Array.from(document.getElementsByClassName("perfect"));
+	var p = document.getElementById("e")
+
+	p.addEventListener("mouseenter", function() {
+
+		perfLetters.forEach(
+			element => element.style.display = "block")})
+
+	p.addEventListener("mouseleave", function() {
+
+		perfLetters.forEach(
+			element => element.style.display = "none")})
+</script>
 </body>
 </html>
