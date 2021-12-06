@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		p{
+			font-size: 50px;
+			margin: 10px;
+			display: inline-block;
+			letter-spacing: 75px;
+			position: absolute;
+
+		}
+		#first{
+			padding-left:25.5%;
+			color: blue;
+			animation-name: move2;
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
+
+		} #second{
+			padding-left: 29%;
+			color: silver;
+			animation-name: move;
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
+		}
+		@keyframes move {
+			0% {bottom:150px;}
+			50% {bottom:203px;}
+			100% {bottom:150px;}
+		}
+		@keyframes move2 {
+			0% {bottom:203px;}
+			50% {bottom:150px;}
+			100% {bottom:203px;}
+		}
+
+		#d{
+			height:500px;
+			width:500px;
+			background-image: url(dreidel.gif);
+			background-size: cover;
+		}
+	</style>
+</head>
+<body>
+<center><div id="d"></div></center>
+<p id = "first">HPYAUKH</p>
+<p id = "second">APHNKA</p>
+<script type="text/javascript">
+	var counter = 0;
+	function click() {
+		var d = document.getElementById('d');
+		var n = Math.floor(Math.random()*4)
+		var zero = "url(hey.jpg)";
+		var one = "url(nun.jpg)";
+		var two = "url(gimmel.jpg)";
+		var three = "url(shin.jpg)";
+		if (counter % 2 === 0) {
+			if (n==0) {
+				d.style.backgroundImage = zero;
+				counter++;
+			} else if (n==1) {
+				d.style.backgroundImage = one;
+				counter++;
+			} else if (n==2) {
+				d.style.backgroundImage = two;
+				counter++;
+			} else {
+				d.style.backgroundImage = three;
+				counter++;
+			}
+		} else {
+			d.style.backgroundImage = "url(dreidel.gif)";
+			counter++;
+		}
+
+	}
+	d.addEventListener('click', click)
+</script>
+</body>
+</html>
