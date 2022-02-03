@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#bod{
+			height: 600px;
+			width:600px;
+			position: absolute;
+
+		}
+	</style>
+</head>
+<body>
+	<!-- step 1 have a div that encompasses the body 
+	step 2make a function
+	step 3have the clientx and clienty and clientx/clienty be the rgb
+	step 4 
+
+	 -->
+	<div id="bod"></div>
+	<script type="text/javascript">
+		var c = document.getElementById("bod");
+
+	document.addEventListener("click",
+		function makeColor(z) {
+			var r = z.clientX
+			var g = z.clientY
+			var b = Math.round(z.clientX/z.clientY)
+
+			console.log(r, g, b)
+			c.style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
+		})
+	</script>
+
+</body>
+</html>

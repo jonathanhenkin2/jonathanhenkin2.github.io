@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RIP A CHEEKY UBESKI</title>
+	<style type="text/css">
+		.uber{
+			height:80px;
+			width:160px;
+			background-image: url(uber.png);
+			background-size: cover;
+			position: absolute;
+
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		document.addEventListener("mousemove",
+			function drawUber(x) {
+				var uber = document.createElement("div")
+				document.body.appendChild(uber);
+				uber.classList.add("uber")
+				uber.style.left = x.clientX - 80 + "px";
+				uber.style.top = x.clientY - 40 + "px";
+
+
+
+			}
+
+
+
+
+
+			)
+	</script>
+</body>
+</html>

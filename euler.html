@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p>If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.</p>
+<p>Find the sum of all the multiples of 3 or 5 below 1000.</p>
+<p id = "p">Click for the answer in javascript, how I did it, and the code I used!</p>
+	<script type="text/javascript">
+
+		var x = 0
+		for (let i = 0; i < 1000; i++) {
+			if (i % 3 == 0){
+				x += i;}
+			if (i % 5 == 0){
+				x += i;}
+			if (i % 15 == 0){
+				x -= i;}}
+		document.getElementById("p").addEventListener("click", sum);
+
+		function sum(){document.getElementById("p").innerHTML = "The sum is " + x + ". I did this by going through each number, 1-1000, and adding the number to a variable that started at 0 if it was divisible by 3 or 5. If the number was divisible by 15, then I subtracted it because I would have added it twice for both 3 and 5. This got me the correct answer of " + x + "! My code was: var x = 0, for (let i = 0; i < 1000; i++), {if (i % 3 == 0){x += i;}, if (i % 5 == 0){x += i;}, if (i % 15 == 0){x -= i;}}";}
+	</script>
+
+</body>
+</html>
