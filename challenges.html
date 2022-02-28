@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.a{
+			height:100px;
+			width:100px;
+		}
+		#one{
+			background-color: red;
+			font-size: 10px;
+			color: black;
+			font-family: Helvetica, sans-serif;
+		}#two{
+			background-color: blue;
+			font-size: 20px;
+			color: white;
+			font-family: Verdana, sans-serif;
+		}#tre{
+			background-color: green;
+			font-size: 30px;
+			color:gray;
+			font-family: Geneva, sans-serif;;
+		}
+		#tre:hover{
+			background-color: yellow;
+		}#one:hover{
+			background-color: yellow;
+		}#two:hover{
+			background-color: yellow;
+		}
+	</style>
+</head>
+<body>
+<div class="a" id = "tre">YEAH</div>
+<div class="a" id="two">WOO</div>
+<div class="a" id="one">FUN</div>
+<a href=index.html><p>LINK!</p></a>
+<script type="text/javascript">
+	document.getElementById("tre").addEventListener("click", function a (){tre.style.display = 'none';})
+	document.getElementById("two").addEventListener("click", function b (){for (let i = 0; i < 100; i++) {
+newdiv = document.createElement("div")
+newdiv.innerText = "I love this!";
+document.body.appendChild(newdiv);
+}})
+	var clicked = true;
+document.getElementById("one").addEventListener("click", () => {
+	if (clicked){
+		document.body.style.backgroundColor = 'pink';
+		clicked = false;
+	}else {
+		document.body.style.backgroundColor = 'purple';
+		clicked = true;
+	}
+})
+var colors = ['red', 'orange', 'yellow', 'green', 'purple', 'blue'];
+var index = 0;
+
+setInterval(function (){
+	document.getElementById("two");
+	two.style.backgroundColor = colors[index];
+	if (!colors[index]) {
+       index = 0;
+   } else {
+       index++;
+   }}, 100);
+
+</script> 
+
+
+
+</body>
+</html>
