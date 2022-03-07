@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <style type="text/css">
+        #code{
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 300px;
+            width: 400px;
+            background-image: url(4code.png);
+        }
+        #solution{
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 300px;
+            width: 400px;
+            background-image: url(4answer.png);
+
+        }
+    </style>
+</head>
+<body>
+    <a href=index.html><div id="back">Back</div></a>
+    <p>Problem: Find the largest palindrome made from the product of two 3-digit numbers.</p>
+    <p>I did this problem in two parts. First I made a function that checked if a number was a palindrome. This function worked by converting the inputted number into a string. As a string, the number could be reversed using indexes. Then, a for loop added each number backwards into a blank string. If the blank string was the same as the inputted number as a string, then the number is a palindrome and if not, it is not a palindrome. Then in order to find the largest product, I made another function. I first realized that all palindromes with an even number of digits are divisble by 11 and the largest products of two three digit numbers would have an even number (6) of digits. I then sorted through each three digit multiple of 11 and each three digit number checking if the product of the two was a palindrome. If it was a palindrome and it was greater than the previous largest, then it took the value of a variable. Then the value of the largest was printed. At first I had two main problems: the first was not using greater than, so the answer I got was the most recent palindrome not the largest. The second problem I had was careless and it was printing "d" and not "y", where y is the highest palindrome and d was simply the last multiplaction tried, which would be 990 x 999. After solving these error, I got the correct answer of 906609. </p>
+<div id = "code"></div>
+<div id = "solution"></div>
+</body>
+</html>

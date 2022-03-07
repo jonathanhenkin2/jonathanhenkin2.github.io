@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#code{
+			background-size: contain;
+			background-repeat: no-repeat;
+			height: 300px;
+			width: 400px;
+			background-image: url(2code.png);
+		}
+		#solution{
+			background-size: contain;
+			background-repeat: no-repeat;
+			height: 300px;
+			width: 400px;
+			background-image: url(2answer.png);
+
+		}
+	</style>
+</head>
+<body>
+<a href=index.html><div id="back">Back</div></a>
+<p>Problem: By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.</p>
+<p> I decided to do this by starting with 1 and 2 as my first two numbers (2 is technically the third fibonacci number, but because we are only counting evens it does not really matter. Then I set the counter variable to 0. I then made a while loop that ran until either a or b was greater than 4 million. Inside the while loop, it cycled through the fibonnaci numbers by adding b to a and then a to b; if either of these new a values or new b values were divisible by 2 and hence even, they were added to the counter variable. Then the solution was printed out after the while loop was over. However this answer was wrong! I realized that I did not count the original value of 2 for b, so I made the counting variable start at 2 and this gave me the correct answer of 4613732.</p>
+<div id = "code"></div>
+<div id = "solution"></div>
+</body>
+</html>

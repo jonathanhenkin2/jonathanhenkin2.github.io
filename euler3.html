@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <style type="text/css">
+        #code{
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 300px;
+            width: 400px;
+            background-image: url(3code.png);
+        }
+        #solution{
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 300px;
+            width: 400px;
+            background-image: url(3answer.png);
+
+        }
+    </style>
+</head>
+<body>
+    <a href=index.html><div id="back">Back</div></a>
+    <p>Problem: What is the largest prime factor of the number 600851475143?</p>
+    <p>I solved this problem by essentially prime factorizing 600851475143. I started by trying to divide 600851475143 by 2, and continuing through checking each consecutive number if it divies 600851475143 evenly. If it does, then 600851475143 will be divided by that number and the new quotient will be the new number that we need to find divisors for. This will go until the perfect square of the attempted divisor is larger than the number at hand because that would mean we have surpassed the possible options. Then the number remaining would be printed out it because all the smaller divisors would have been removed. This got me the correct answer of 6857.  </p>
+<div id = "code"></div>
+<div id = "solution"></div>
+</body>
+</html>
