@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body{
+			background-color: rgb(255,253,208);
+		}
+		p{
+			font-size: 30px;
+			color: rgb(255, 135, 107);
+		}		#spring{
+			height: 625px;
+			width:500px;
+			background-image: url(https://images.squarespace-cdn.com/content/v1/51b48f99e4b00dfc8085f558/1558704769063-31DHIVBZ6NSN7SGF4UUN/CT_JL0011_ParkAvenue_RF.jpg?format=1000w);
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+		#taxitaxi{
+			height: 60px;
+			width:200px;
+			/*background-color: red;*/
+			top: 560px;
+			left:635px;
+			position: absolute;
+
+		}#sunflower{
+			height: 100px;
+			width:500px;
+			/*background-color: blue;*/
+			top: 620px;
+			left:470px;
+			position: absolute;
+
+		}#seeyouagain{
+			height: 200px;
+			width:500px;
+			/*background-color: yellow;*/
+			top: 95px;
+			left:470px;
+			position: absolute;
+
+		}#drivers{
+			height: 80px;
+			width:20px;
+			/*background-color: green;*/
+			position: absolute;
+			top: 400px;
+			left:835px;
+		}#hymn{
+			height: 100px;
+			width:500px;
+			/*background-color: purple;*/
+			top: 290px;
+			left:470px;
+			position: absolute;
+
+		}
+
+			
+		
+
+	</style>
+</head>
+<body>
+<center><p>Click on the flowers at the bottom, at the top, the buildings, the stop sign, and the taxi for songs!</p>
+<div id="spring"></div>
+<div id = "taxitaxi"></div>
+<div id = "sunflower"></div>
+<div id = "seeyouagain"></div>
+<div id = "drivers"></div>
+<div id = "hymn"></div></center>
+<script type="text/javascript">
+	var sun = document.getElementById('sunflower');
+	var sf = new Audio("sunflower.mp3");
+	sun.onclick = function() {
+	if (sf.paused) {
+	sf.play();
+	sy.pause();
+	d.pause();
+	h.pause();
+	t.pause();
+	}
+	else{
+		sf.pause();
+	}}
+	var see = document.getElementById('seeyouagain');
+	var sy = new Audio("sya.mp3");
+	see.onclick = function() {
+	if (sy.paused) {
+	sy.play();
+	sf.pause();
+	d.pause();
+	h.pause();
+	t.pause();
+	}
+	else{
+		sy.pause();
+	}}
+	var dri = document.getElementById('drivers');
+	var d = new Audio("drivers.mp3");
+	dri.onclick = function() {
+	if (d.paused) {
+	d.play();
+	sf.pause();
+	sy.pause();
+	h.pause();
+	t.pause();
+	}
+	else{
+		d.pause();
+	}}
+	var hym = document.getElementById('hymn');
+	var h = new Audio("hymn.mp3");
+	hym.onclick = function() {
+	if (h.paused) {
+	h.play();
+	sf.pause();
+	sy.pause();
+	d.pause();
+	t.pause();
+	}
+	else{
+		h.pause();
+	}}
+	var tax = document.getElementById('taxitaxi');
+	var t = new Audio("taxi.mp3");
+	tax.onclick = function() {
+	if (t.paused) {
+	t.play();
+	sf.pause();
+	sy.pause();
+	d.pause();
+	h.pause();
+	}
+	else{
+		t.pause();
+	}}
+
+
+</script>
+</body>
+</html>
