@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		
+        .virus{
+        	top:1000px;
+        	left:1000px;
+        	background-size:contain;
+			width:100px;
+			height:100px;
+			background-image:url(max.png);
+			transition:.5s;
+			margin:10px;
+			background-position:center;
+			background-repeat: no-repeat;
+			position:absolute;
+			border-radius: 50%;
+
+
+		}
+		.virus2{
+        	top:1000px;
+        	left:1000px;
+        	background-size:contain;
+			width:50px;
+			height:50px;
+			background-image:url(max.png);
+			transition:.5s;
+			margin:10px;
+			background-position:center;
+			background-repeat: no-repeat;
+			position:absolute;
+			border-radius: 50%;
+			filter: grayscale(100%);
+
+
+		}
+	</style>
+</head>
+<body>
+	<audio id="sound" src="rip.mp3"></audio>
+	<p>Max made black and white:</p>
+	<input id="input">
+<script type="text/javascript">
+	var pew = document.getElementById('sound');
+	var input = document.getElementById('input');
+	var x = 0;
+
+	function createCorona() {
+		var corona = document.createElement('div');
+		document.body.appendChild(corona);
+		corona.classList.add("virus");
+
+	
+	function changePosition() {
+		corona.style.left = 1000 * Math.random() + "px";
+		corona.style.top = 1000 * Math.random() + "px";
+
+	}
+	corona.addEventListener("click", function(){
+		x = x + 1;
+		input.value = x;
+		corona.classList.add("virus2");
+		pew.play()
+	})
+	setInterval(changePosition, 2000);};
+	setInterval(createCorona,500);
+</script>
+</body>
+</html>
