@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body{
+			background-color: black;
+		}
+		#click{
+			height: 20px;
+			width:60px;
+			color: white;
+		}
+		#lyrics{
+			font-size: 50px;
+			color: rgb(127,255,212);
+		}
+		#tequila{
+			height:540px;
+			width:540px;
+			background-image: url(https://ipfs.pixura.io/ipfs/QmYeKzejbPtyTh1FeEBsWZVUNoKYoHsvCBL2qTC297WBVe/Saxabone.gif);
+			background-size: cover;
+
+		}
+	</style>
+</head>
+<body>
+<div id="click">click me!</div>
+<center><div id="tequila"></div>
+<div id="lyrics"></div></center>
+
+
+<script type="text/javascript">
+	var click = document.getElementById('click');
+	var c = new Audio("tequila.mp3");
+	var l = document.getElementById('lyrics');
+	click.onclick = function() {
+	c.play();
+	setInterval(function () {l.innerHTML = "Tequila"}, 50000);
+	setInterval(function () {l.innerHTML = ""}, 54000);
+	setInterval(function () {l.style.color = "rgb(255,140,105)";
+	l.innerHTML = "Tequila"}, 93000);
+	setInterval(function () {l.innerHTML = ""}, 97000);
+	setInterval(function () {l.style.color = "rgb(255,0,144)";
+	l.style.fontSize = "75px";
+	l.innerHTML = "Tequila"}, 126000);
+
+	}
+</script>
+
+</body>
+</html>
